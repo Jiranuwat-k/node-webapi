@@ -1,23 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const uuid = require('uuid');
-const users =[
-    {
-        id: 1,
-        name: 'jiranuwat',
-        email:'a0621479833@gmail.com'
-    },
-    {
-        id: 2,
-        name: 'jiranuwat',
-        email:'jiranuwat.k@outlook.com'
-    },
-    {
-        id: 3,
-        name: 'weem',
-        email:'test@gmail.com'
-    }
-]
+const users =[]
 
 
 router.get('/',(req,res)=>{
