@@ -15,3 +15,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 // app.use(log);
 app.use('/api/users',require('./router/api/users'));
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'public'));
+});
